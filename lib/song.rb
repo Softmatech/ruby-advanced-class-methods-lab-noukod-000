@@ -48,7 +48,7 @@ def self.new_from_filename(filename)
 end
 
 def self.destroy_all
-    @@all.clear
+    @@all = []
 end
 
 end
