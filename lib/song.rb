@@ -25,7 +25,7 @@ def self.new_by_name(name)
     song = Song.new(name)
 end
 
-def create_by_name(name)
+def self.create_by_name(name)
     song = Song.new(name)
     @@all << song
     song
