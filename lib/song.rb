@@ -37,7 +37,7 @@ end
 
 def self.find_or_create_by_name(name)
     found = self.find_by_name(name)
-    if !found
+    if found
       found
     else
       self.create_by_name(name)
