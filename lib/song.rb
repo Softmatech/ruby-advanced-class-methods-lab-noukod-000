@@ -58,7 +58,7 @@ end
 def self.create_from_filename(filename)
     filename = filename.split(/ - /)
     artist_name = filename[0]
-    song_name = filename[1].sub(/ - /,'')
+    song_name = filename[1].sub(/.mp3/,'')
     song = Song.new(song_name,artist_name)
     @@all << song
 end
