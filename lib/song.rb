@@ -53,7 +53,6 @@ def self.new_from_filename(filename)
     artist_name = filename[0]
     song_name = filename[1].sub(/.mp3/,'')
     song = Song.new(song_name, artist_name)
-    @@all << song
 end
 
 def self.destroy_all
